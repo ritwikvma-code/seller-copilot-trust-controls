@@ -24,3 +24,7 @@ keywords:
   - multi-agent systems
   - e-commerce marketplaces
 repository-code: "https://github.com/ritwikvma-code/seller-copilot-trust-controls"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22485943"
+    description: "Archived snapshot of v1.0.0"
