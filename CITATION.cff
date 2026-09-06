@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Trust-control simulation for seller AI copilots"
+abstract: >-
+  Reproducible synthetic simulation of the deterministic trust controls
+  described in "Trustworthy AI Copilots for E-Commerce Sellers: A
+  Practitioner's Playbook for Engineering Financial Trust on Managed Payment
+  Platforms." Validates settlement reconciliation, cohort-aware return-fraud
+  baselines, and inline cross-agent boundary verification on fully synthetic
+  data. No language model executes in this code.
+type: software
+version: 1.0.0
+date-released: "2026-09-06"
+license: MIT
+authors:
+  - given-names: "Ritwik"
+    family-names: "Verma"
+    email: "v.ritwik@gmail.com"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # uncomment and fill if you have one
+keywords:
+  - AI copilots
+  - financial trust
+  - payment reconciliation
+  - multi-agent systems
+  - e-commerce marketplaces
+repository-code: "https://github.com/USERNAME/seller-copilot-trust-controls"

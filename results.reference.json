@@ -1,0 +1,179 @@
+{
+  "seed": 42,
+  "E1_reconciliation": {
+    "duplicate_fee": {
+      "precision": 0.988,
+      "recall": 1.0,
+      "f1": 0.994,
+      "support": 401
+    },
+    "missing_promo_credit": {
+      "precision": 1.0,
+      "recall": 0.602,
+      "f1": 0.752,
+      "support": 88
+    },
+    "incorrect_category_rate": {
+      "precision": 1.0,
+      "recall": 0.822,
+      "f1": 0.902,
+      "support": 242
+    },
+    "erroneous_refund_deduction": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 218
+    },
+    "shipping_miscalculation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 224
+    },
+    "unclassified_discrepancy": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "_overall": {
+      "detection_recall": 0.938,
+      "detection_precision": 1.0,
+      "n_transactions": 40000,
+      "n_anomalies": 1173,
+      "false_flags_on_clean": 0,
+      "false_flag_rate_clean": 0.0
+    }
+  },
+  "E2_fraud": {
+    "cohort_baseline": {
+      "roc_auc": 0.945,
+      "tpr_at_threshold": 0.803,
+      "fpr_at_threshold": 0.0262,
+      "precision_at_threshold": 0.791,
+      "fpr_at_matched_tpr_085": 0.1049,
+      "false_positives": 14,
+      "false_positives_high_return_cohorts": 0,
+      "n_sellers": 600,
+      "n_victims": 66,
+      "threshold": 0.6
+    },
+    "universal_baseline": {
+      "roc_auc": 0.953,
+      "tpr_at_threshold": 0.879,
+      "fpr_at_threshold": 0.1086,
+      "precision_at_threshold": 0.5,
+      "fpr_at_matched_tpr_085": 0.0749,
+      "false_positives": 58,
+      "false_positives_high_return_cohorts": 58,
+      "n_sellers": 600,
+      "n_victims": 66,
+      "threshold": 0.6
+    }
+  },
+  "E3_cascade": {
+    "overall_detection_rate": 0.733,
+    "detection_by_magnitude": {
+      "2-5%": {
+        "detected": 0,
+        "total": 51,
+        "rate": 0.0
+      },
+      "5-10%": {
+        "detected": 39,
+        "total": 39,
+        "rate": 1.0
+      },
+      "10-25%": {
+        "detected": 60,
+        "total": 60,
+        "rate": 1.0
+      },
+      ">25%": {
+        "detected": 41,
+        "total": 41,
+        "rate": 1.0
+      }
+    },
+    "false_flag_rate_clean_transitions": 0.0,
+    "mean_detection_latency_steps": 0.0,
+    "mean_downstream_steps_halted": 2.43,
+    "n_traces": 2500,
+    "n_injected": 191,
+    "error_threshold": 0.05
+  },
+  "E4_ablations": {
+    "reconciliation_full": {
+      "detection_precision": 1.0,
+      "detection_recall": 0.938,
+      "typed_macro_f1": 0.93
+    },
+    "reconciliation_no_version_aware": {
+      "detection_precision": 0.736,
+      "detection_recall": 0.966,
+      "false_flags_on_clean": 406
+    },
+    "fraud_cohort_vs_universal": {
+      "precision_cohort": 0.791,
+      "precision_universal": 0.5,
+      "fp_high_return_cohort": 0,
+      "fp_high_return_universal": 58
+    },
+    "cascade_inline_vs_posthoc": {
+      "corrupted_steps_inline": 0.0,
+      "corrupted_steps_posthoc": 2.43
+    }
+  },
+  "E5_multiseed": {
+    "det_precision": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "det_recall": {
+      "mean": 0.9437,
+      "sd": 0.0045,
+      "min": 0.938,
+      "max": 0.951
+    },
+    "macro_f1": {
+      "mean": 0.9426,
+      "sd": 0.0056,
+      "min": 0.9296,
+      "max": 0.9498
+    },
+    "fraud_prec_cohort": {
+      "mean": 0.7779,
+      "sd": 0.0495,
+      "min": 0.677,
+      "max": 0.836
+    },
+    "fraud_prec_universal": {
+      "mean": 0.4975,
+      "sd": 0.0578,
+      "min": 0.434,
+      "max": 0.605
+    },
+    "material_cascade_detection": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "cascade_false_flags": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "recon_false_flags": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "n_seeds": 10
+  }
+}

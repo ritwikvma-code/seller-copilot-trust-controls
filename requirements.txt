@@ -1,0 +1,4 @@
+# evaluation_simulation.py imports only numpy plus the standard library;
+# matplotlib is imported inside main() for figure rendering.
+numpy==2.2.6
+matplotlib==3.10.9
