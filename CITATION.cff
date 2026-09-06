@@ -15,12 +15,12 @@ license: MIT
 authors:
   - given-names: "Ritwik"
     family-names: "Verma"
-    email: "v.ritwik@gmail.com"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"  # uncomment and fill if you have one
+    email: "ritwik.vma@gmail.com"
+    # orcid: "https://orcid.org/0009-0007-5883-3733"  
 keywords:
   - AI copilots
   - financial trust
   - payment reconciliation
   - multi-agent systems
   - e-commerce marketplaces
-repository-code: "https://github.com/USERNAME/seller-copilot-trust-controls"
+repository-code: "https://github.com/ritwikvma-code/seller-copilot-trust-controls"
