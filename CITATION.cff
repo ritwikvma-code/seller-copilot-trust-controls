@@ -16,7 +16,7 @@ authors:
   - given-names: "Ritwik"
     family-names: "Verma"
     email: "ritwik.vma@gmail.com"
-    # orcid: "https://orcid.org/0009-0007-5883-3733"  
+    orcid: "https://orcid.org/0009-0007-5883-3733"  
 keywords:
   - AI copilots
   - financial trust
