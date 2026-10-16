@@ -10,7 +10,7 @@ abstract: >-
   revised experiments.
 type: software
 version: 2.0.0
-date-released: "2026-10-15"
+date-released: "2026-10-16"
 license: MIT
 authors:
   - given-names: "Ritwik"
@@ -28,7 +28,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.22485943"
     description: "Archived snapshot of v1.0.0"
-  # After Zenodo mints the v2.0.0 version DOI, add it here as a second entry:
-  #  - type: doi
-  #    value: "10.5281/zenodo.23410833"
-  #    description: "Archived snapshot of v2.0.0"
+  - type: doi
+    value: "10.5281/zenodo.23410833"
+    description: "Archived snapshot of v2.0.0"
