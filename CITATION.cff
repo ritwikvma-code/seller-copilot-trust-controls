@@ -1,30 +1,34 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Trust-control simulation for seller AI copilots"
+title: "Seller AI Copilot - reproducibility supplement"
 abstract: >-
-  Reproducible synthetic simulation of the deterministic trust controls
-  described in "Trustworthy AI Copilots for E-Commerce Sellers: A
-  Practitioner's Playbook for Engineering Financial Trust on Managed Payment
-  Platforms." Validates settlement reconciliation, cohort-aware return-fraud
-  baselines, and inline cross-agent boundary verification on fully synthetic
-  data. No language model executes in this code.
+  Synthetic experiments (original and revised controls, runner, verification
+  script, per-seed results and primary fraud scores) for the manuscript
+  "Engineering Financial Trust in Seller AI Copilots". Reference environment
+  Python 3.12.14, NumPy 2.3.5. No language model executes in this code and no
+  private or production data is used. Release v1.0.0 does not contain the
+  revised experiments.
 type: software
-version: 1.0.0
-date-released: "2026-09-06"
+version: 2.0.0
+date-released: "2026-10-16"
 license: MIT
 authors:
   - given-names: "Ritwik"
     family-names: "Verma"
     email: "ritwik.vma@gmail.com"
-    orcid: "https://orcid.org/0009-0007-5883-3733"  
+    orcid: "https://orcid.org/0009-0007-5883-3733"
 keywords:
-  - AI copilots
-  - financial trust
+  - financial AI
+  - seller copilot
   - payment reconciliation
-  - multi-agent systems
-  - e-commerce marketplaces
+  - return-abuse triage
+  - agent verification
 repository-code: "https://github.com/ritwikvma-code/seller-copilot-trust-controls"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22485943"
     description: "Archived snapshot of v1.0.0"
+  # After Zenodo mints the v2.0.0 version DOI, add it here as a second entry:
+  #  - type: doi
+  #    value: "10.5281/zenodo.NNNNNNNN"
+  #    description: "Archived snapshot of v2.0.0"
