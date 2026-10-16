@@ -25,9 +25,10 @@ keywords:
   - agent verification
 repository-code: "https://github.com/ritwikvma-code/seller-copilot-trust-controls"
 identifiers:
-  - type: doi
+- type: doi
+    value: "10.5281/zenodo.23410833"
+    description: "Archived snapshot of v2.0.0"  
+- type: doi
     value: "10.5281/zenodo.22485943"
     description: "Archived snapshot of v1.0.0"
-  - type: doi
-    value: "10.5281/zenodo.23410833"
-    description: "Archived snapshot of v2.0.0"
+  
